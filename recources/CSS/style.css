@@ -1,0 +1,83 @@
+div {
+  border: 1px solid green;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+  height: 64px;
+  align-items: center;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.headerLeft img {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.headerLeft h1 {
+  color: rgb(155, 155, 155);
+}
+
+nav ul li:nth-child(-n+3) {
+  border-right: 16px solid rgb(146, 224, 224);
+}
+
+.headerLeft h1 span:first-child {
+  color: rgb(74, 74, 74);
+  font-weight: bold;
+}
+
+/* FIRST BLOCK */
+
+.firstMain {
+  display: flex;
+  align-items: center;
+  background-color: rgb(216, 216, 216);
+}
+
+.firstContent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px; /* images are hard... >.< */
+}
+
+.contentBlock {
+  margin: 32px 24px;
+}
+
+.imageBlock-1 {
+  width: 60%;
+}
+.firstMain div img {
+  width: 100%;
+}
+
+.startButton {
+  color: seashell;
+  background-color: rgb(74, 74, 74);
+  text-align: center;
+  padding: 8px 0px;
+}
