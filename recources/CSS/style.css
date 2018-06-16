@@ -61,7 +61,7 @@ nav ul li:nth-child(-n+3) {
 .firstContent {
   display: flex;
   flex-direction: column;
-  margin-left: 24px; /* images are hard... >.< */
+  margin-left: 24px;
 }
 
 .contentBlock {
@@ -72,7 +72,7 @@ nav ul li:nth-child(-n+3) {
   min-width: 60%;
 }
 .firstMain div img {
-  min-width: 60%;
+  min-width: 60%; /* images are hard... >.< */
 }
 
 .startButton {
@@ -93,7 +93,7 @@ nav ul li:nth-child(-n+3) {
 }
 
 .secondLeft {
-  min-width: 60%;
+  /*min-width: 60%;*/
   margin: 32px 24px;
 }
 
@@ -135,4 +135,28 @@ nav ul li:nth-child(-n+3) {
 
 .text-1 p {
   margin: 24px 0px; /* I could make this easier for sure... */
+}
+
+.thirdMain h1 {
+  text-align: center;
+  /*margin: 32px 0px;*/
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 72px 32px 72px;
+}
+
+.calalogBox {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+}
+
+.calalogBox img {
+  max-width: 100%;
 }
