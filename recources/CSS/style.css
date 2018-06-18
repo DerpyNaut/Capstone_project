@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  font-family: Assistant, sans-serif;
 }
 
 .contentInBox a {
@@ -40,7 +41,7 @@ p {
   font-weight: 300;
 }
 
-.startButton h3 {
+.startButton h3 a {
   color: seashell;
   font-weight: 400;
 }
@@ -71,6 +72,10 @@ p {
 }
 
 /* HEADER */
+
+.iconsHeader {
+  display: none;
+}
 
 header {
   display: flex;
@@ -168,6 +173,10 @@ nav ul li:nth-child(-n+3) {
 }
 
 /* SECOND BLOCK */
+
+.mobilePicture {
+  display: none;
+}
 
 .secondMain {
   display: flex;
@@ -354,4 +363,134 @@ footer {
 
 .footerLinks h4 {
   margin-left: 16px;
+}
+
+
+/* MOBILE VERSION */
+
+@media only screen and (max-width: 480px) {
+
+    .headerLeft, nav {
+      display: none;
+    }
+
+    .firstMain {
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    .firstContent {
+      margin-left: 0px;
+      max-width: none;
+      padding: 32px 0px;
+    }
+
+    .firstMain .imageBlock-1 {
+      width: auto;
+      margin: 0px;
+    }
+
+    .secondLeft {
+      display: none;
+    }
+
+    .secondRight {
+      width: auto;
+    }
+
+    .box {
+      flex-direction: column;
+      border: none;
+      align-items: baseline;
+    }
+
+    .catalog {
+      flex-direction: column;
+      margin: 0px;
+    }
+
+    .calalogBox {
+      max-width: 100%;
+    }
+
+    .calalogBox img, .catalogText h3, .catalogText p {
+      display: none;
+    }
+
+    .foContent {
+      display: none;
+    }
+
+    .videoBlock {
+      width: 100%;
+      margin: 0px;
+    }
+
+    .videoBlock h2, .videoBlock p {
+      display: none;
+    }
+
+    .footerLinks {
+      display: none;
+    }
+
+    .contentBlock {
+      margin: 18px 16px;
+    }
+
+    .firstContent h1, .thirdMain h1, .text-1 h1, .foMain h1 {
+      font-size: 3rem
+    }
+
+    .startButton {
+      background-color: rgb(155, 155, 155);
+    }
+
+    .startButton h3 a {
+      font-weight: 700px;
+    }
+
+    .secondRight .container .box:last-child {
+      background-color: rgba(0, 0, 0, 0); /* How can i exclude rules like that...? "None" value didn't worked on that. */
+    }
+
+    .thirdMain {
+      background-color: rgb(245, 244, 245);
+    }
+
+    .catalogText {
+      background-color: rgb(216, 216, 216);
+    }
+
+    .thirdMain h1, .foMain h1 {
+      border-top: 1px solid rgba(216, 216, 216);
+    }
+
+    .iconsHeader {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .startButton h3 a {
+      color: white;
+    }
+
+    .desktopPicture {
+      display: none;
+    }
+
+    .mobilePicture {
+      display: block;
+    }
+
+    .pictureInBox {
+      width: auto;
+    }
+
+    .contentInBox {
+      margin-top: 16px;
+    }
 }
