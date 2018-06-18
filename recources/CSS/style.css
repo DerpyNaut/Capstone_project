@@ -1,5 +1,73 @@
-div {
+/*div {
   border: 1px solid green;
+}*/
+
+/* FONT-RULES */
+
+a {
+  text-decoration: none;
+}
+
+.contentInBox a {
+  color: #4b91e2;
+}
+
+header a {
+  color: #545454;
+}
+
+footer a, footer h4 {
+  color: #777777;
+}
+
+.thirdMain p, .foMain p {
+  color: #777777;
+}
+
+.secondMain p {
+  color: #4f4f4f;
+}
+
+h1, h2, h3, h4 {
+  color: #4a4a4a;
+  font-family: Assistant, sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: Assistant, sans-serif;
+  font-weight: 300;
+}
+
+.startButton h3 {
+  color: seashell;
+  font-weight: 400;
+}
+
+.firstContent h1, .thirdMain h1, .text-1 h1, .foMain h1 {
+  font-size: 3.9rem;
+  font-weight: 800;
+}
+
+.firstContent h2, .videoBlock h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contentInBox a, {
+  font-family: Assistant, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.catalogText h3 {
+  font-weight: 400;
+  color: #777777;
+}
+
+.text-1 h3 {
+  font-weight: 600;
 }
 
 /* HEADER */
@@ -10,6 +78,9 @@ header {
   padding: 0px 24px;
   height: 64px;
   align-items: center;
+  font-family: Assistant, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .headerLeft {
@@ -39,6 +110,7 @@ nav ul li {
 
 .headerLeft h1 {
   color: rgb(155, 155, 155);
+  font-size: 1.2rem;
 }
 
 nav ul li:nth-child(-n+3) {
@@ -48,6 +120,10 @@ nav ul li:nth-child(-n+3) {
 .headerLeft h1 span:first-child {
   color: rgb(74, 74, 74);
   font-weight: bold;
+}
+
+.headerLeft h1 span:last-child {
+  font-weight: 600;
 }
 
 /* FIRST BLOCK */
@@ -62,17 +138,24 @@ nav ul li:nth-child(-n+3) {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
+  max-width: 28%;
 }
 
 .contentBlock {
   margin: 32px 24px;
 }
 
-.imageBlock-1 {
-  min-width: 60%;
+.firstMain .imageBlock-1 {
+  width: 60%;
+  margin: 32px 0px 32px 24px;
 }
+
+.imageBlock-1 {
+  width: 100%;
+}
+
 .firstMain div img {
-  min-width: 60%; /* images are hard... >.< */
+  width: 100%; /* images are hard... >.< */
 }
 
 .startButton {
@@ -80,21 +163,29 @@ nav ul li:nth-child(-n+3) {
   background-color: rgb(74, 74, 74);
   text-align: center;
   padding: 8px 0px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
+
+/* SECOND BLOCK */
 
 .secondMain {
   display: flex;
-
+  background-color: #f3f5f5;
 }
 
 .secondRight {
-  min-width: 40%;
-  padding: 32px 0px;
-}
+  width: 40%;
+  padding-bottom: 32px;
+  margin-top: 5px;
+  border-left: 1px solid #d8d8d8;
+  }
+
 
 .secondLeft {
-  /*min-width: 60%;*/
+  width: 60%;
   margin: 32px 24px;
+
 }
 
 .container {
@@ -106,23 +197,37 @@ nav ul li:nth-child(-n+3) {
   display: flex;
   align-items: center;
   padding: 16px 0px 16px 16px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  margin-left: 1px;
 }
 
 .box:first-child {
-  padding-top: 0px;
+  padding-top: 27px;
+  margin-bottom: 3px;
+  border-top: none;
+}
+
+.box-1:first-child {
+  padding-top: 16px;
 }
 
 .contentInBox {
-  min-width: 65%;
+  width: 65%;
+  margin-left: 16px;
+}
+
+.contentInBox h2, .catalogText h2 {
+  font-size: 2rem;
 }
 
 .pictureInBox {
-  min-width: 35%;
+  width: 35%;
   margin-right: 16px;
   height: auto;
 }
 .pictureInBox img {
-  min-width: 100%;
+  width: 100%;
 }
 
 .box p {
@@ -137,26 +242,116 @@ nav ul li:nth-child(-n+3) {
   margin: 24px 0px; /* I could make this easier for sure... */
 }
 
+.secondRight .container .box:last-child {
+  margin-left: 0px;
+  background-color: #d8d8d8;
+}
+
+
+/* THIRD BLOCK */
+
+.thirdMain {
+  background-color: #eaebec;
+}
+
 .thirdMain h1 {
   text-align: center;
-  /*margin: 32px 0px;*/
+  padding: 32px 0px 18px 0px;
 }
 
 .catalog {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  /*align-items: center; !!! Was only making it bit worse... !!! */
   flex-wrap: wrap;
-  margin: 0px 72px 32px 72px;
+  margin: 0px 72px;
+  padding-bottom: 32px;
 }
 
 .calalogBox {
-  margin-top: 32px;
+  margin: 18px 18px;
   display: flex;
   flex-direction: column;
   max-width: 25%;
+  background-color: white;
 }
 
 .calalogBox img {
   max-width: 100%;
+}
+
+/*.catalogText h2 {
+  margin: 16px 0px 8px 0px;
+}*/
+
+.catalogText h3 {
+  margin: 8px 0px;
+}
+
+.catalogText {
+  padding: 16px 0px 24px 16px;
+}
+
+/* 4th BLOCK */
+
+.foMain h1 {
+  text-align: center;
+  padding: 32px 0px;
+}
+
+.foMain {
+  background-color: #f3f5f5;
+}
+
+.videoBlock {
+  width: 60%;
+  margin: 0px 24px 24px 24px;
+}
+
+.videoBlock h2 {
+  margin: 24px 0px 8px 0px;
+}
+
+/*.videoBlock {
+  min-width: 100%;
+}*/
+
+.foBlock {
+  display: flex;
+}
+
+.foContent {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foContent .container .box:first-child {
+  background-color: #d8d8d8;
+}
+
+.foContent .box {
+  border: none;
+}
+
+/* Footer */
+
+footer {
+  height: 64px;
+  background-color: #f3f5f5;
+}
+
+.footerblock {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 0px 24px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footerLinks h4 {
+  margin-left: 16px;
 }
