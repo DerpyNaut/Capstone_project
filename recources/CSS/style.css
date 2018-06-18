@@ -209,11 +209,16 @@ nav ul li:nth-child(-n+3) {
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
   margin-left: 1px;
+  margin-bottom: 3px;
+  transition: background-color 0.5s;
+}
+
+.colorAnimation:hover {
+  background-color: #d8d8d8;
 }
 
 .box:first-child {
   padding-top: 27px;
-  margin-bottom: 3px;
   border-top: none;
 }
 
@@ -253,7 +258,7 @@ nav ul li:nth-child(-n+3) {
 
 .secondRight .container .box:last-child {
   margin-left: 0px;
-  background-color: #d8d8d8;
+  /*background-color: #d8d8d8;*/
 }
 
 
@@ -277,12 +282,13 @@ nav ul li:nth-child(-n+3) {
   padding-bottom: 32px;
 }
 
-.calalogBox {
+.calalogBox /* don't ask the name... ^^" */ {
   margin: 18px 18px;
   display: flex;
   flex-direction: column;
   max-width: 25%;
   background-color: white;
+  transition: background-color 0.5s;
 }
 
 .calalogBox img {
@@ -334,14 +340,16 @@ nav ul li:nth-child(-n+3) {
   display: flex;
   flex-direction: column;
 }
-
+/*
 .foContent .container .box:first-child {
   background-color: #d8d8d8;
 }
-
+*/
 .foContent .box {
   border: none;
 }
+
+
 
 /* Footer */
 
@@ -402,6 +410,11 @@ footer {
       flex-direction: column;
       border: none;
       align-items: baseline;
+      transition: background-color 0s; /* How can i turn it off tho? */
+    }
+
+    .box:active {
+      background-color: rgba(33, 33, 33, 0.4);
     }
 
     .catalog {
@@ -450,16 +463,20 @@ footer {
       font-weight: 700px;
     }
 
-    .secondRight .container .box:last-child {
-      background-color: rgba(0, 0, 0, 0); /* How can i exclude rules like that...? "None" value didn't worked on that. */
+    /*.secondRight .container .box:last-child {
+      background-color: rgba(0, 0, 0, 0); How can i exclude rules like that...? "None" value didn't worked on that.
     }
-
+*/
     .thirdMain {
       background-color: rgb(245, 244, 245);
     }
 
     .catalogText {
       background-color: rgb(216, 216, 216);
+    }
+
+    .catalogText:active {
+      background-color: rgb(245, 244, 245);
     }
 
     .thirdMain h1, .foMain h1 {
@@ -476,6 +493,9 @@ footer {
 
     .startButton h3 a {
       color: white;
+    }
+    .startButton:active {
+      background-color: rgb(216, 216, 216);
     }
 
     .desktopPicture {
